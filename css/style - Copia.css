@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+ --vermelho: #d10000;
+ ---preto: #000000;
+ --amarelo: #d3a832;
+ --branco: #ffffff;
+}
+.background-vermelho{
+    background: var(--vermelho);
+}
+/*reutilizavel*/
+.container{
+    max-width: 1440px;
+    padding:0 5%;
+    margin:0 auto;
+}
+#buton-top{
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+footer,
+section{
+    padding: 2.7rem 0;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color:#ffffff;
+
+}
+.ul{
+    display: flex;
+    align-items: center;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;    
+}
+.ul li a{
+    color: #ffffff;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+}
+.ul li a:hover{
+    background-color: var(--amarelo);
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.btn-gradient{
+    padding: 10px 25px;
+    color: #ffffff;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+    border: none;
+    cursor: pointer;
+    background:var(--amarelo);
+    border-radius: 10px;
+}
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../imagens/download.jpg);
+    
+}
+.main-text{
+    width: 50%;
+    color:#ffffff;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+}
+.main-text h1{
+    font-size: 4.5rem;
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.menu-icon{
+    display: none;
+    position:relative;
+    z-index: 10;
+}
+.atualizacao{
+    background: #d10000;
+}
+.atualizacao .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.atualizacao .att-text{
+    color:#ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+}
+.atualizacao .resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+}
+.atualizacao .resultado p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+
+}
+.atualizacao .resultado p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.inicio .container{
+    display: grid;
+    justify-content: center;
+    margin: 5px auto;
+}
+.inicio .card{
+    width: 1200px;
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+    
+}
+.inicio #manga1{
+    background-image: url(../imagens/1068.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.inicio #manga2{
+    background-image: url(../imagens/1067.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.inicio #manga3{
+    background-image: url(../imagens/1066.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.inicio #manga4{
+    background-image: url(../imagens/1065.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.inicio #manga5{
+    background-image: url(../imagens/1064.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.inicio #manga6{
+    background-image: url(../imagens/1063.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.inicio .card:hover{
+    background-color: rgb(199, 195, 190);
+}
+.inicio .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+
+}
+.ajuda{
+    background-color: #d10000;
+}
+.ajuda .box-ajuda{
+    text-align: center;
+    background-image: url('../imagens/1.jpg');
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    
+}
+.ajuda .box-ajuda h2{
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+}
+.ajuda .box-ajuda p{
+    color: #ffffff;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+}
+.ajuda .box-ajuda input{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    color: #000000;
+    background-color: #faefda;
+}
+.ajuda .box-ajuda button{
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    color:#ffffff;
+    background-color: var(--amarelo);
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+    cursor: pointer;
+    
+}
+.colorText {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow:1px 1px 1px black,-1px 1px 1px black,1px -1px 1px black;
+    text-align: center;
+}
+
+.fontSize {
+    font-size: 20px;
+}
+.colorText{
+    background-color: #d10000;
+    margin-top: 0;
+}
+@media (max-width:1200px){
+    .menu-icon{
+        display: block;
+        z-index: 9999;
+        
+    }
+    .ul{
+        position: fixed;
+        background-image: url(../imagens/aaa.jpg);
+        top:0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999;
+    }
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .ul.ativo{
+        left: 0;
+    }
+ main .container{
+flex-direction: column;
+} 
+main .container .main-img{
+    width: 100%;
+}
+main .container .main-text{
+    width: 100%;
+    text-align: center;
+}
+main .container .main-text div{
+    justify-content: center;
+}
+main .container .main-text h1{
+    font-size: 4rem;
+}
+.atualizacao .container{
+    flex-direction: column;
+}
+.resultado{
+    margin-top: 20px;
+}
+.att-text,
+.resultado{
+    width: 100%;
+    text-align: center;
+}
+.inicio .container{
+    flex-direction: column;
+    
+}
+.inicio .container{
+    width: 100%;
+    
+}
+.inicio .card{
+    width: 700px;
+}
+
+}
+/*video*/
+.episodio{
+    display: flex;
+}
+.inicio .container a{
+    color: #000000;
+}
